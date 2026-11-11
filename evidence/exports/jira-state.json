@@ -1,0 +1,545 @@
+{
+  "generatedAt": "2026-11-11T04:33:19.636Z",
+  "siteUrl": "https://sjec-team-xyntwxhy.atlassian.net",
+  "projectKey": "RECL",
+  "projectUrl": "https://sjec-team-xyntwxhy.atlassian.net/jira/software/projects/RECL/summary",
+  "boardUrl": "https://sjec-team-xyntwxhy.atlassian.net/jira/software/projects/RECL/boards/1",
+  "backlogUrl": "https://sjec-team-xyntwxhy.atlassian.net/jira/software/projects/RECL/boards/1/backlog",
+  "issues": {
+    "E1": {
+      "key": "RECL-5",
+      "type": "Epic",
+      "summary": "Register Organizations & Add Materials",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-5",
+      "status": "To Do",
+      "priority": "Medium",
+      "storyPoints": null,
+      "parent": null,
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "epic",
+        "foundation",
+        "registry"
+      ]
+    },
+    "E2": {
+      "key": "RECL-6",
+      "type": "Epic",
+      "summary": "Check & Verify Materials",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-6",
+      "status": "To Do",
+      "priority": "Medium",
+      "storyPoints": null,
+      "parent": null,
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "epic",
+        "inspection",
+        "trust"
+      ]
+    },
+    "E3": {
+      "key": "RECL-7",
+      "type": "Epic",
+      "summary": "Find Materials Easily",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-7",
+      "status": "To Do",
+      "priority": "Medium",
+      "storyPoints": null,
+      "parent": null,
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "buyer",
+        "discovery",
+        "epic"
+      ]
+    },
+    "E4": {
+      "key": "RECL-8",
+      "type": "Epic",
+      "summary": "Reservations & Deliveries",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-8",
+      "status": "To Do",
+      "priority": "Medium",
+      "storyPoints": null,
+      "parent": null,
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "epic",
+        "logistics",
+        "reservation"
+      ]
+    },
+    "E5": {
+      "key": "RECL-9",
+      "type": "Epic",
+      "summary": "Environmental Impact & Admin",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-9",
+      "status": "To Do",
+      "priority": "Medium",
+      "storyPoints": null,
+      "parent": null,
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "administration",
+        "analytics",
+        "epic"
+      ]
+    },
+    "US-01": {
+      "key": "RECL-17",
+      "type": "Story",
+      "summary": "Add Organization",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-17",
+      "status": "Done",
+      "priority": "High",
+      "storyPoints": 3,
+      "parent": "RECL-5",
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "foundation",
+        "onboarding",
+        "organization"
+      ]
+    },
+    "US-02": {
+      "key": "RECL-18",
+      "type": "Story",
+      "summary": "Add Surplus Material",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-18",
+      "status": "Done",
+      "priority": "Highest",
+      "storyPoints": 5,
+      "parent": "RECL-5",
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "foundation",
+        "listing",
+        "materials",
+        "supplier"
+      ]
+    },
+    "US-03": {
+      "key": "RECL-19",
+      "type": "Story",
+      "summary": "Manage Stock & Inventory",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-19",
+      "status": "Done",
+      "priority": "High",
+      "storyPoints": 5,
+      "parent": "RECL-5",
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "consistency",
+        "inventory",
+        "supplier"
+      ]
+    },
+    "US-04": {
+      "key": "RECL-20",
+      "type": "Story",
+      "summary": "Inspect Material Quality",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-20",
+      "status": "Done",
+      "priority": "Highest",
+      "storyPoints": 5,
+      "parent": "RECL-6",
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "inspection",
+        "quality",
+        "trust"
+      ]
+    },
+    "US-05": {
+      "key": "RECL-21",
+      "type": "Story",
+      "summary": "Check Material Status",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-21",
+      "status": "Done",
+      "priority": "High",
+      "storyPoints": 3,
+      "parent": "RECL-6",
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "buyer",
+        "trust",
+        "verification"
+      ]
+    },
+    "US-06": {
+      "key": "RECL-22",
+      "type": "Story",
+      "summary": "Handle Expired Listings",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-22",
+      "status": "In Progress",
+      "priority": "Medium",
+      "storyPoints": 3,
+      "parent": "RECL-6",
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "expiry",
+        "listing",
+        "supplier"
+      ]
+    },
+    "US-07": {
+      "key": "RECL-23",
+      "type": "Story",
+      "summary": "Search Materials",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-23",
+      "status": "Done",
+      "priority": "High",
+      "storyPoints": 3,
+      "parent": "RECL-7",
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "buyer",
+        "discovery",
+        "search"
+      ]
+    },
+    "US-08": {
+      "key": "RECL-24",
+      "type": "Story",
+      "summary": "Find Nearby Materials",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-24",
+      "status": "To Do",
+      "priority": "Medium",
+      "storyPoints": 5,
+      "parent": "RECL-7",
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "buyer",
+        "discovery",
+        "location",
+        "logistics"
+      ]
+    },
+    "US-09": {
+      "key": "RECL-25",
+      "type": "Story",
+      "summary": "Match Material Requests",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-25",
+      "status": "To Do",
+      "priority": "High",
+      "storyPoints": 5,
+      "parent": "RECL-7",
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "buyer",
+        "discovery",
+        "matching",
+        "requirements"
+      ]
+    },
+    "US-10": {
+      "key": "RECL-26",
+      "type": "Story",
+      "summary": "Request Material",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-26",
+      "status": "To Do",
+      "priority": "Highest",
+      "storyPoints": 5,
+      "parent": "RECL-8",
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "buyer",
+        "request",
+        "reservation"
+      ]
+    },
+    "US-11": {
+      "key": "RECL-27",
+      "type": "Story",
+      "summary": "Approve Material Requests",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-27",
+      "status": "To Do",
+      "priority": "Highest",
+      "storyPoints": 5,
+      "parent": "RECL-8",
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "approval",
+        "inventory",
+        "reservation",
+        "supplier"
+      ]
+    },
+    "US-12": {
+      "key": "RECL-28",
+      "type": "Story",
+      "summary": "Track Material Delivery",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-28",
+      "status": "To Do",
+      "priority": "Highest",
+      "storyPoints": 8,
+      "parent": "RECL-8",
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "delivery",
+        "logistics",
+        "tracking",
+        "transfer"
+      ]
+    },
+    "US-13": {
+      "key": "RECL-29",
+      "type": "Story",
+      "summary": "Fix Quantity Mismatch on Delivery",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-29",
+      "status": "To Do",
+      "priority": "High",
+      "storyPoints": 5,
+      "parent": "RECL-8",
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "discrepancy",
+        "inventory",
+        "logistics",
+        "resolution"
+      ]
+    },
+    "US-14": {
+      "key": "RECL-30",
+      "type": "Story",
+      "summary": "Track Environmental Savings",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-30",
+      "status": "To Do",
+      "priority": "High",
+      "storyPoints": 5,
+      "parent": "RECL-9",
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "analytics",
+        "impact",
+        "reporting",
+        "sustainability"
+      ]
+    },
+    "US-15": {
+      "key": "RECL-31",
+      "type": "Story",
+      "summary": "Manager Overview Dashboard",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-31",
+      "status": "To Do",
+      "priority": "Medium",
+      "storyPoints": 5,
+      "parent": "RECL-9",
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "administration",
+        "dashboard",
+        "operations"
+      ]
+    },
+    "US-16": {
+      "key": "RECL-32",
+      "type": "Story",
+      "summary": "Manage User Accounts",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-32",
+      "status": "To Do",
+      "priority": "Medium",
+      "storyPoints": 3,
+      "parent": "RECL-9",
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "administration",
+        "roles",
+        "security",
+        "users"
+      ]
+    },
+    "BUG-01": {
+      "key": "RECL-33",
+      "type": "Bug",
+      "summary": "Reserved Stock Incorrectly Remains Available in Inventory",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-33",
+      "status": "Done",
+      "priority": "High",
+      "storyPoints": 2,
+      "parent": "RECL-5",
+      "assignee": "Siddharth Sanjay",
+      "labels": [
+        "bug",
+        "defect",
+        "inventory",
+        "reservation",
+        "sprint-1"
+      ]
+    }
+  },
+  "phases": {
+    "bootstrap": {
+      "at": "2026-11-08T12:32:33.497Z",
+      "projectCreated": true,
+      "epics": 5,
+      "issues": 17,
+      "stories": 16,
+      "bug": 1,
+      "sprint1Issues": 7,
+      "totalPoints": 75,
+      "sprint1Points": 26
+    },
+    "execute": {
+      "at": "2026-11-08T12:33:38.029Z",
+      "sprintState": "active",
+      "statusSnapshot": {
+        "done": [
+          "US-01",
+          "US-02"
+        ],
+        "inProgress": [
+          "US-03",
+          "US-04",
+          "US-07",
+          "BUG-01"
+        ],
+        "toDo": [
+          "US-05"
+        ]
+      }
+    },
+    "complete": {
+      "at": "2026-11-08T12:34:27.778Z",
+      "completedIssues": 7,
+      "completedPoints": 26,
+      "bugResolution": "Fixed",
+      "sprintState": "closed",
+      "sprintReportNote": "All committed stories and the regression bug were completed. Sprint 1 closed with no carry-over."
+    },
+    "sprint2": {
+      "at": "2026-11-08T12:34:40.057Z",
+      "sprintState": "active",
+      "sprintIssues": [
+        "RECL-22",
+        "RECL-24",
+        "RECL-25",
+        "RECL-26",
+        "RECL-27"
+      ],
+      "plannedPoints": 23,
+      "boardSnapshot": {
+        "inProgress": [
+          "US-06"
+        ],
+        "toDo": [
+          "US-08",
+          "US-09",
+          "US-10",
+          "US-11"
+        ]
+      }
+    }
+  },
+  "sprintOutcome": {
+    "outcome": "Sprint 1 completed with 7 of 7 items Done (26 points), including BUG-01. No carry-over.",
+    "carryOver": 0
+  },
+  "lastError": null,
+  "projectId": "10000",
+  "projectStyle": "team-managed",
+  "board": {
+    "id": 1,
+    "name": "SCRUM board",
+    "url": "https://sjec-team-xyntwxhy.atlassian.net/jira/software/projects/RECL/boards/1",
+    "backlogUrl": "https://sjec-team-xyntwxhy.atlassian.net/jira/software/projects/RECL/boards/1/backlog"
+  },
+  "accountId": "712020:2563f896-475a-4ea0-9b0c-8dd6c695ff94",
+  "issueTypes": {
+    "epic": "Epic",
+    "story": "Story",
+    "bug": "Bug",
+    "task": "Task",
+    "epicId": "10001",
+    "storyId": "10004",
+    "bugId": "10007"
+  },
+  "fields": {
+    "storyPoints": {
+      "id": "customfield_10016",
+      "name": "Story point estimate"
+    },
+    "epicLink": {
+      "id": "parent",
+      "name": "Parent"
+    }
+  },
+  "sprints": {
+    "SPR-1": {
+      "id": 3,
+      "name": "Sprint 1 - Foundation",
+      "state": "closed",
+      "startDate": "2026-11-02T03:30:00.000Z",
+      "endDate": "2026-11-08T06:30:00.000Z",
+      "completeDate": "2026-11-08T12:34:27.836Z",
+      "goal": "Allow organizations to sign up, add leftover materials, check stock, and set up inspections.",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/jira/software/projects/RECL/boards/1?sprint=3"
+    },
+    "SPR-2": {
+      "id": 4,
+      "name": "Sprint 2 - Find Materials",
+      "state": "active",
+      "startDate": "2026-11-08T08:30:00.000Z",
+      "endDate": "2026-11-20T12:30:00.000Z",
+      "completeDate": null,
+      "goal": "Help buyers find materials, check nearby listings, and submit material requests.",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/jira/software/projects/RECL/boards/1?sprint=4"
+    }
+  },
+  "sprintPoints": {
+    "SPR-1": 26,
+    "SPR-2": 23
+  },
+  "lastRun": {
+    "at": "2026-11-11T04:33:21.683Z",
+    "phase": "evidence-prep",
+    "site": "https://sjec-team-xyntwxhy.atlassian.net",
+    "accountId": "712020:2563f896-475a-4ea0-9b0c-8dd6c695ff94"
+  },
+  "sprintIssues": {
+    "SPR-1": [
+      "RECL-17",
+      "RECL-18",
+      "RECL-19",
+      "RECL-20",
+      "RECL-21",
+      "RECL-23",
+      "RECL-33"
+    ],
+    "SPR-2": [
+      "RECL-22",
+      "RECL-24",
+      "RECL-25",
+      "RECL-26",
+      "RECL-27"
+    ]
+  },
+  "filters": {
+    "sprint1Scope": {
+      "id": "10001",
+      "name": "Sprint 1 - Committed Scope (26 pts)",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/issues/?filter=10001"
+    },
+    "sprint1Result": {
+      "id": "10002",
+      "name": "Sprint 1 - Completed Result (26 pts)",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/issues/?filter=10002"
+    },
+    "sprint2Scope": {
+      "id": "10003",
+      "name": "Sprint 2 - Active Scope (23 pts)",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/issues/?filter=10003"
+    },
+    "assignedWork": {
+      "id": "10004",
+      "name": "RECL - Assigned Work (Siddharth Sanjay)",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/issues/?filter=10004"
+    }
+  },
+  "dashboard": {
+    "id": 10001,
+    "name": "ReClaim – Sprint 1 Report & Project Overview",
+    "url": "https://sjec-team-xyntwxhy.atlassian.net/jira/dashboards/10001"
+  }
+}

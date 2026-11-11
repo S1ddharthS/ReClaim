@@ -1,0 +1,358 @@
+﻿Issue ID,Issue Type,Summary,Description,Priority,Story Points,Epic,Labels,Sprint,Assignee,Initial Status,Resolution
+US-01,Story,Add Organization,"USER STORY
+As an organization manager, I want to sign up our company so that we can list or request surplus materials.
+
+CONTEXT
+Signing up is the first step. Enter your company name, contact person, work email, phone, address, and intended role (Supplier, Buyer, or Both). New accounts are checked by our team before you can create listings or request materials.
+
+ACCEPTANCE CRITERIA
+1. Company name, contact person, work email, phone, operating address, and intended role are required; missing values show an easy-to-understand message next to the field.
+2. When you finish signing up, the system generates your account reference (like ORG-2026-0001) and shows a friendly confirmation message.
+3. If someone tries to sign up with the same company name and email domain, we show a clear message: 'An account with this email domain already exists. Please contact support if you need help.'
+4. Your new account starts as 'Waiting for Verification'. You can list or request items once our team reviews your details.
+5. We send a confirmation email right away to your registered email address.
+6. Clicking the submit button twice by mistake will not create a duplicate account.
+
+DEFINITION OF DONE
+- Acceptance criteria verified by the Product Owner.
+- Automated checks and peer review completed.
+- No open blocker defects remain.
+- Story accepted at Sprint Review.
+
+Traceability: US-01 | Epic: Register Organizations & Add Materials | Sprint: Sprint 1 - Foundation | Priority: High | Story Points: 3",High,3,Register Organizations & Add Materials,onboarding organization foundation,Sprint 1 - Foundation,Siddharth Sanjay,Done,
+US-02,Story,Add Surplus Material,"USER STORY
+As a supplier, I want to add our leftover materials so that other teams can find and reuse them.
+
+CONTEXT
+When you have leftover materials, you can list them here. Provide the material name, category, condition, quantity, pickup location, and photos so buyers know exactly what is available.
+
+ACCEPTANCE CRITERIA
+1. Suppliers can enter material name, category, simple description, condition, quantity, unit, pickup location, pickup date, and attach photos.
+2. Quantity must be greater than zero. Condition choices are clear and simple: New, Like New, Good, Fair, or Salvage.
+3. When submitted, the system gives you a tracking code (like MAT-2026-00001) and shows a success message.
+4. New items start as 'Waiting for Inspection' and will not appear in buyer search results until checked and approved by an inspector.
+5. Suppliers can save their progress as a Draft and return to complete it anytime. Only completed listings can be sent for inspection.
+6. Any edits made to the listing are saved with a date and time so you have a clear activity history.
+
+DEFINITION OF DONE
+- Acceptance criteria verified by the Product Owner.
+- Automated checks and peer review completed.
+- No open blocker defects remain.
+- Story accepted at Sprint Review.
+
+Traceability: US-02 | Epic: Register Organizations & Add Materials | Sprint: Sprint 1 - Foundation | Priority: Highest | Story Points: 5",Highest,5,Register Organizations & Add Materials,materials supplier listing foundation,Sprint 1 - Foundation,Siddharth Sanjay,Done,
+US-03,Story,Manage Stock & Inventory,"USER STORY
+As a supplier, I want to manage our material stock so our available quantity is always accurate and up to date.
+
+CONTEXT
+Your stock page shows how much material you listed, how much is on hold for buyers, how much has been delivered, and what is still available to share.
+
+ACCEPTANCE CRITERIA
+1. The stock page lists all your materials showing Listed Stock, Reserved Stock, Delivered Stock, and Available Stock (Available = Listed - Reserved - Delivered).
+2. You cannot enter a negative quantity or reduce stock below what is already reserved or delivered. If you try, a clear message explains why.
+3. Approving a hold moves that quantity from Available to Reserved right away. If a request is rejected or cancelled, the stock returns to Available.
+4. Marking a delivery as complete moves items from Reserved to Delivered without counting twice.
+5. Every stock change shows a clear reason, the person who made it, and the date and time.
+6. When available stock reaches zero, the item is clearly marked 'Out of Stock' so buyers cannot request it.
+
+DEFINITION OF DONE
+- Acceptance criteria verified by the Product Owner.
+- Automated checks and peer review completed.
+- No open blocker defects remain.
+- Story accepted at Sprint Review.
+
+Traceability: US-03 | Epic: Register Organizations & Add Materials | Sprint: Sprint 1 - Foundation | Priority: High | Story Points: 5",High,5,Register Organizations & Add Materials,inventory supplier consistency,Sprint 1 - Foundation,Siddharth Sanjay,Done,
+US-04,Story,Inspect Material Quality,"USER STORY
+As an inspector, I want to check listed materials so that buyers only receive safe, reliable items.
+
+CONTEXT
+Inspectors check submitted materials before they go live. You can review photos, condition details, and location to make an approve or reject decision.
+
+ACCEPTANCE CRITERIA
+1. Inspectors can view a list of items 'Waiting for Inspection' and sort by category, location, or how long they have been waiting.
+2. Inspectors can open the full listing to review supplier details, photos, quantity, location, and condition notes.
+3. Inspectors can select 'Approve' or 'Reject', select a condition grade, and add friendly notes.
+4. If rejecting an item, the inspector must choose a reason (such as condition mismatch, safety concern, or missing photos) and write a short explanation.
+5. Approving an item marks it as 'Verified' so buyers can find it. Rejecting marks it as 'Rejected' and notifies the supplier.
+6. Inspection reports are saved permanently so both sides can see the notes and photos.
+
+DEFINITION OF DONE
+- Acceptance criteria verified by the Product Owner.
+- Automated checks and peer review completed.
+- No open blocker defects remain.
+- Story accepted at Sprint Review.
+
+Traceability: US-04 | Epic: Check & Verify Materials | Sprint: Sprint 1 - Foundation | Priority: Highest | Story Points: 5",Highest,5,Check & Verify Materials,inspection quality trust,Sprint 1 - Foundation,Siddharth Sanjay,Done,
+US-05,Story,Check Material Status,"USER STORY
+As a buyer, I want to see verification badges and inspection notes so I know the material is in good condition.
+
+CONTEXT
+Buyers need to trust what they are getting. Every verified item displays a clear green badge with inspector notes and photos.
+
+ACCEPTANCE CRITERIA
+1. Every approved item displays a green 'Verified' badge in search results, on the item page, and on the request form.
+2. Items that are 'Waiting for Inspection' or 'Rejected' are hidden from buyer search, matching, and request forms.
+3. Buyers can click 'View Inspection Details' to see the inspector's name, inspection date, condition rating, and notes.
+4. Every status change adds a note to the item's activity history showing old status, new status, person, time, and reason.
+5. The 'Verified' badge is removed automatically if an item expires or is taken down by the supplier.
+6. Opening a rejected item by direct web link shows a friendly 'This material is no longer available' message.
+
+DEFINITION OF DONE
+- Acceptance criteria verified by the Product Owner.
+- Automated checks and peer review completed.
+- No open blocker defects remain.
+- Story accepted at Sprint Review.
+
+Traceability: US-05 | Epic: Check & Verify Materials | Sprint: Sprint 1 - Foundation | Priority: High | Story Points: 3",High,3,Check & Verify Materials,verification buyer trust,Sprint 1 - Foundation,Siddharth Sanjay,Done,
+US-06,Story,Handle Expired Listings,"USER STORY
+As a supplier, I want old listings to expire automatically so buyers do not request materials that are no longer available.
+
+CONTEXT
+Surplus materials are often only available for a certain time. Old listings expire automatically to keep the marketplace fresh and avoid disappointed buyers.
+
+ACCEPTANCE CRITERIA
+1. Suppliers can set an expiry date when adding or editing a material listing.
+2. When the expiry date passes, the system marks the item as 'Expired' and takes it out of buyer search results.
+3. Expired materials will not appear in search or matching, but any existing approved reservation remains valid.
+4. Suppliers can easily renew an expired listing by picking a new future date.
+5. We send a friendly email reminder 7 days before an item expires so you can renew it if needed.
+
+DEFINITION OF DONE
+- Acceptance criteria verified by the Product Owner.
+- Automated checks and peer review completed.
+- No open blocker defects remain.
+- Story accepted at Sprint Review.
+
+Traceability: US-06 | Epic: Check & Verify Materials | Sprint: Sprint 2 - Find Materials | Priority: Medium | Story Points: 3",Medium,3,Check & Verify Materials,expiry supplier listing,Sprint 2 - Find Materials,Siddharth Sanjay,In Progress,
+US-07,Story,Search Materials,"USER STORY
+As a buyer, I want to search for materials by keyword or category so that I can quickly find what I need.
+
+CONTEXT
+Buyers use search to discover available materials. Results only show checked, available materials and update smoothly.
+
+ACCEPTANCE CRITERIA
+1. Search matches material names and description words, and handles uppercase, lowercase, and minor spelling differences.
+2. Buyers can filter by one or more material categories, and the list updates instantly without reloading the page.
+3. Search only shows Verified, in-stock materials that have not expired.
+4. If no materials match, a friendly message says 'No materials match your search' and offers a 'Clear Filters' button.
+5. Results are organized into easy-to-browse pages of 20 items, and you can share your search link with teammates.
+
+DEFINITION OF DONE
+- Acceptance criteria verified by the Product Owner.
+- Automated checks and peer review completed.
+- No open blocker defects remain.
+- Story accepted at Sprint Review.
+
+Traceability: US-07 | Epic: Find Materials Easily | Sprint: Sprint 1 - Foundation | Priority: High | Story Points: 3",High,3,Find Materials Easily,search discovery buyer,Sprint 1 - Foundation,Siddharth Sanjay,Done,
+US-08,Story,Find Nearby Materials,"USER STORY
+As a buyer, I want to find materials near my location so that we can save on transport time and costs.
+
+CONTEXT
+Finding materials close to your site saves transport costs and reduces carbon emissions. You can easily filter by distance or city.
+
+ACCEPTANCE CRITERIA
+1. Every listing clearly shows pickup city, state, and country.
+2. Buyers can filter by city and choose a distance radius: 25 km, 50 km, 100 km, or 250 km from their site.
+3. When a location filter is selected, materials are sorted with the closest items first, showing distance in kilometers.
+4. Listings without location coordinates still appear in regular keyword search with the note 'Location not specified'.
+5. If an unrecognised city is entered, a helpful message explains 'Please check your city or pin code' instead of showing a blank screen.
+6. Your chosen location and distance remain saved as you browse through search results.
+
+DEFINITION OF DONE
+- Acceptance criteria verified by the Product Owner.
+- Automated checks and peer review completed.
+- No open blocker defects remain.
+- Story accepted at Sprint Review.
+
+Traceability: US-08 | Epic: Find Materials Easily | Sprint: Sprint 2 - Find Materials | Priority: Medium | Story Points: 5",Medium,5,Find Materials Easily,location discovery buyer logistics,Sprint 2 - Find Materials,Siddharth Sanjay,To Do,
+US-09,Story,Match Material Requests,"USER STORY
+As a buyer, I want to enter my project needs so the system can match me with the right surplus materials.
+
+CONTEXT
+Instead of searching manually, enter what material you need, how much you need, and when. The system will find the best matches for you.
+
+ACCEPTANCE CRITERIA
+1. Buyers can create a request with material category, needed quantity, needed-by date, and maximum distance.
+2. The system matches verified, available listings that have enough stock to meet your needs.
+3. Each matching item shows a simple match score (like 95% Match) and explains why (e.g., 'Right category, 15 km away, enough stock').
+4. If no materials match your exact needs, the system offers helpful tips, like broadening your search distance or quantity.
+5. You can save your project requirements and re-run them whenever new materials are added.
+
+DEFINITION OF DONE
+- Acceptance criteria verified by the Product Owner.
+- Automated checks and peer review completed.
+- No open blocker defects remain.
+- Story accepted at Sprint Review.
+
+Traceability: US-09 | Epic: Find Materials Easily | Sprint: Sprint 2 - Find Materials | Priority: High | Story Points: 5",High,5,Find Materials Easily,matching discovery buyer requirements,Sprint 2 - Find Materials,Siddharth Sanjay,To Do,
+US-10,Story,Request Material,"USER STORY
+As a buyer, I want to request material from a supplier so they can hold stock for our project.
+
+CONTEXT
+When you find what you need, submit a request. The supplier reviews it and reserves the stock for you upon approval.
+
+ACCEPTANCE CRITERIA
+1. Select any verified material and enter the quantity you need (up to the available amount).
+2. Enter your planned reuse, needed-by date, whether you will pick it up or need delivery, and your contact person.
+3. Submitting creates a request reference (like REQ-2026-00001) marked 'Waiting for Supplier Review', and alerts the supplier.
+4. You cannot submit duplicate requests for the same material while your first request is pending.
+5. Suppliers see your request right away on their dashboard with your organization name and requested quantity.
+6. You can withdraw your request at any time before the supplier approves it.
+7. Submitting a request does not lock stock until the supplier clicks 'Approve Request'.
+
+DEFINITION OF DONE
+- Acceptance criteria verified by the Product Owner.
+- Automated checks and peer review completed.
+- No open blocker defects remain.
+- Story accepted at Sprint Review.
+
+Traceability: US-10 | Epic: Reservations & Deliveries | Sprint: Sprint 2 - Find Materials | Priority: Highest | Story Points: 5",Highest,5,Reservations & Deliveries,request buyer reservation,Sprint 2 - Find Materials,Siddharth Sanjay,To Do,
+US-11,Story,Approve Material Requests,"USER STORY
+As a supplier, I want to approve or reject buyer requests so I can manage who gets our surplus materials.
+
+CONTEXT
+Suppliers review incoming requests. Approving a request puts the stock on hold so no one else can take it.
+
+ACCEPTANCE CRITERIA
+1. Suppliers can review request details: buyer organization, quantity needed, project use, and requested pickup date.
+2. Clicking 'Approve Request' puts the requested quantity on hold (moves it from Available to Reserved) in one step.
+3. If stock is no longer available when you click approve, the system clearly notifies you: 'Available stock has changed. Please review updated quantities.'
+4. If you must reject a request, select a reason (e.g. 'Not enough stock' or 'Schedule conflict') and add a friendly note for the buyer.
+5. Suppliers can offer a partial quantity if they don't have the full amount. The buyer receives a message to accept or decline.
+6. Both buyer and supplier receive instant notifications and can view the request status timeline.
+
+DEFINITION OF DONE
+- Acceptance criteria verified by the Product Owner.
+- Automated checks and peer review completed.
+- No open blocker defects remain.
+- Story accepted at Sprint Review.
+
+Traceability: US-11 | Epic: Reservations & Deliveries | Sprint: Sprint 2 - Find Materials | Priority: Highest | Story Points: 5",Highest,5,Reservations & Deliveries,reservation supplier inventory approval,Sprint 2 - Find Materials,Siddharth Sanjay,To Do,
+US-12,Story,Track Material Delivery,"USER STORY
+As a delivery coordinator, I want to track pickup and drop-off so both sides know where materials are.
+
+CONTEXT
+Once a hold is approved, the material is scheduled for delivery. Both supplier and buyer see the same step-by-step updates from pickup to delivery.
+
+ACCEPTANCE CRITERIA
+1. After a request is approved, coordinators can enter delivery method, pickup date, driver details, and tracking code.
+2. Clear delivery stages: Scheduled -> Picked Up -> In Transit -> Delivered -> Completed.
+3. Every status update shows a date, time, and quick note visible to both buyer and supplier.
+4. Confirming delivery requires receiver name, delivered quantity, condition check, and a photo of delivery receipt.
+5. If the delivered amount differs from the requested amount, the system opens a 'Quantity Mismatch' note before finalizing stock.
+6. Items move from Reserved to Delivered only after delivery is confirmed and any mismatch is resolved.
+7. Both organizations receive automatic updates at every delivery step.
+
+DEFINITION OF DONE
+- Acceptance criteria verified by the Product Owner.
+- Automated checks and peer review completed.
+- No open blocker defects remain.
+- Story accepted at Sprint Review.
+
+Traceability: US-12 | Epic: Reservations & Deliveries | Sprint: Product Backlog | Priority: Highest | Story Points: 8",Highest,8,Reservations & Deliveries,transfer logistics tracking delivery,,Siddharth Sanjay,To Do,
+US-13,Story,Fix Quantity Mismatch on Delivery,"USER STORY
+As a delivery coordinator, I want to resolve quantity mismatches so records stay accurate and fair.
+
+CONTEXT
+Sometimes the delivered amount is slightly different due to damage or counting differences. This tool lets both sides agree on the final number.
+
+ACCEPTANCE CRITERIA
+1. When delivered quantity doesn't match the reserved quantity, the system creates a mismatch record showing expected, received, and difference.
+2. Buyer and supplier can add notes and photos for 5 business days after delivery.
+3. The coordinator resolves the issue as Shortage, Damage, Surplus, or Count Correction with a short note.
+4. Resolving updates stock once and never allows stock to drop below zero.
+5. Clear status stages: Open -> Under Review -> Resolved.
+6. The final agreed numbers and resolution notes are saved in the activity history.
+
+DEFINITION OF DONE
+- Acceptance criteria verified by the Product Owner.
+- Automated checks and peer review completed.
+- No open blocker defects remain.
+- Story accepted at Sprint Review.
+
+Traceability: US-13 | Epic: Reservations & Deliveries | Sprint: Product Backlog | Priority: High | Story Points: 5",High,5,Reservations & Deliveries,discrepancy logistics inventory resolution,,Siddharth Sanjay,To Do,
+US-14,Story,Track Environmental Savings,"USER STORY
+As a platform manager, I want to see environmental savings so we can celebrate waste prevented and emissions saved.
+
+CONTEXT
+ReClaim calculates real environmental benefits from every completed reuse, turning saved kilograms into clear, easy-to-read numbers.
+
+ACCEPTANCE CRITERIA
+1. The report shows total kilograms reused, completed listings, estimated emissions avoided, and waste diverted from landfills.
+2. Calculations use transparent, documented factors per material category.
+3. Only completed deliveries are counted; cancelled transfers are automatically excluded.
+4. Managers can export the report as a simple CSV spreadsheet or PDF document.
+5. Displayed totals match the sum of completed transfers, and users can click through to see the contributing items.
+6. Organizations can view their own green impact badge to share on their company reports.
+
+DEFINITION OF DONE
+- Acceptance criteria verified by the Product Owner.
+- Automated checks and peer review completed.
+- No open blocker defects remain.
+- Story accepted at Sprint Review.
+
+Traceability: US-14 | Epic: Environmental Impact & Admin | Sprint: Product Backlog | Priority: High | Story Points: 5",High,5,Environmental Impact & Admin,impact sustainability reporting analytics,,Siddharth Sanjay,To Do,
+US-15,Story,Manager Overview Dashboard,"USER STORY
+As an administrator, I want a simple overview of platform activity so I can keep everything running smoothly.
+
+CONTEXT
+A quick bird's-eye view of active members, pending quality checks, open requests, active deliveries, and total reused materials.
+
+ACCEPTANCE CRITERIA
+1. The overview card shows active organizations, items waiting for inspection, listings by status, open requests, and total kilograms reused.
+2. Cards show when data was last updated.
+3. Admins can filter by date range and organization name with one click.
+4. The dashboard highlights items needing attention (like inspections waiting over 48 hours or requests waiting over 24 hours).
+5. Platform administrators see all organizations, while company users see only their own data.
+6. You can export summary data to a CSV spreadsheet anytime.
+
+DEFINITION OF DONE
+- Acceptance criteria verified by the Product Owner.
+- Automated checks and peer review completed.
+- No open blocker defects remain.
+- Story accepted at Sprint Review.
+
+Traceability: US-15 | Epic: Environmental Impact & Admin | Sprint: Product Backlog | Priority: Medium | Story Points: 5",Medium,5,Environmental Impact & Admin,dashboard administration operations,,Siddharth Sanjay,To Do,
+US-16,Story,Manage User Accounts,"USER STORY
+As an administrator, I want to manage member accounts and user permissions so the platform stays safe and trusted.
+
+CONTEXT
+Admins can verify new company sign-ups, invite team members, assign roles, and pause accounts if needed.
+
+ACCEPTANCE CRITERIA
+1. Admins can view and search all organizations by name or status.
+2. Admins can approve new sign-ups with one click or pause accounts with a short reason.
+3. Admins can invite team members with simple roles: Supplier, Buyer, Inspector, Delivery Coordinator, or Administrator.
+4. Account permissions take effect immediately upon saving.
+5. Pausing an account safely stops new sign-ins while preserving existing transaction history.
+
+DEFINITION OF DONE
+- Acceptance criteria verified by the Product Owner.
+- Automated checks and peer review completed.
+- No open blocker defects remain.
+- Story accepted at Sprint Review.
+
+Traceability: US-16 | Epic: Environmental Impact & Admin | Sprint: Product Backlog | Priority: Medium | Story Points: 3",Medium,3,Environmental Impact & Admin,administration users roles security,,Siddharth Sanjay,To Do,
+BUG-01,Bug,Reserved Stock Incorrectly Remains Available in Inventory,"BUG REPORT
+A material listing has 100 units available. A buyer requests 70 units. The supplier approves the reservation. The system incorrectly continues displaying 100 units as available in inventory instead of decrementing available units and incrementing reserved units.
+
+Environment: ReClaim staging, build 0.1.0, Chrome on Windows 11, test organization ORG-2026-0042.
+
+Steps to reproduce:
+1. List a material surplus with available quantity of 100 units.
+2. Buyer submits a material request for 70 units.
+3. Supplier approves the reservation.
+4. Inspect the Material Inventory Management listing and available quantity display.
+
+Expected: Available quantity becomes 30. Reserved quantity becomes 70. Inventory must update correctly after approval. Duplicate reservations must not reduce inventory twice. Available quantity must never become negative.
+Actual: Available quantity incorrectly continues displaying 100 units as available while 70 units are marked reserved.
+
+Fix verification / acceptance criteria:
+- Available quantity becomes 30 when 70 units are reserved from a 100-unit listing.
+- Reserved quantity becomes 70 upon reservation approval.
+- Inventory must update correctly and atomically immediately after approval.
+- Duplicate reservation approvals must not reduce inventory twice.
+- Available quantity must never become negative under any concurrent requests.
+- Audit event log records the inventory deduction and reservation transition.
+
+Traceability: BUG-01 | Epic: Register Organizations & Add Materials | Sprint: Sprint 1 - Foundation | Priority: High | Story Points: 2",High,2,Register Organizations & Add Materials,bug inventory reservation sprint-1 defect,Sprint 1 - Foundation,Siddharth Sanjay,Done,Fixed

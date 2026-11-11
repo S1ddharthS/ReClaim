@@ -1,0 +1,120 @@
+{
+  "generatedAt": "2026-11-11T05:27:09.822Z",
+  "site": "https://sjec-team-xyntwxhy.atlassian.net",
+  "projectKey": "RECL",
+  "projectUrl": "https://sjec-team-xyntwxhy.atlassian.net/jira/software/projects/RECL/summary",
+  "boardUrl": "https://sjec-team-xyntwxhy.atlassian.net/jira/software/projects/RECL/boards/1",
+  "counts": {
+    "epics": 5,
+    "stories": 16,
+    "bugs": 1,
+    "total": 22,
+    "sprint1Issues": 7,
+    "sprint1Points": 26,
+    "sprint2Points": 23,
+    "backlog": 5
+  },
+  "sprint1Statuses": [
+    {
+      "key": "RECL-17",
+      "summary": "Add Organization",
+      "status": "Done",
+      "resolution": null
+    },
+    {
+      "key": "RECL-18",
+      "summary": "Add Surplus Material",
+      "status": "Done",
+      "resolution": "Done"
+    },
+    {
+      "key": "RECL-19",
+      "summary": "Manage Stock & Inventory",
+      "status": "Done",
+      "resolution": "Done"
+    },
+    {
+      "key": "RECL-20",
+      "summary": "Inspect Material Quality",
+      "status": "Done",
+      "resolution": "Done"
+    },
+    {
+      "key": "RECL-21",
+      "summary": "Check Material Status",
+      "status": "Done",
+      "resolution": "Done"
+    },
+    {
+      "key": "RECL-23",
+      "summary": "Search Materials",
+      "status": "Done",
+      "resolution": "Done"
+    },
+    {
+      "key": "RECL-33",
+      "summary": "Reserved Stock Incorrectly Remains Available in Inventory",
+      "status": "Done",
+      "resolution": "Done"
+    }
+  ],
+  "bug": {
+    "key": "RECL-33",
+    "status": "Done",
+    "resolution": "Done",
+    "summary": "Reserved Stock Incorrectly Remains Available in Inventory"
+  },
+  "findings": [
+    {
+      "level": "pass",
+      "check": "Five epics exist",
+      "detail": "RECL-5, RECL-6, RECL-7, RECL-8, RECL-9"
+    },
+    {
+      "level": "pass",
+      "check": "At least 15 user stories exist",
+      "detail": "16 stories."
+    },
+    {
+      "level": "pass",
+      "check": "At least one bug exists",
+      "detail": "RECL-33"
+    },
+    {
+      "level": "pass",
+      "check": "Required issue fields populated",
+      "detail": "Description, priority, labels, assignee, epic link and story points are present on every item."
+    },
+    {
+      "level": "pass",
+      "check": "Sprint 1 completed",
+      "detail": "Sprint 1 - Foundation (3) is closed."
+    },
+    {
+      "level": "pass",
+      "check": "Sprint 1 scope is Done",
+      "detail": "7 issues completed."
+    },
+    {
+      "level": "pass",
+      "check": "Bug resolved",
+      "detail": "RECL-33 is Done (Done)."
+    },
+    {
+      "level": "pass",
+      "check": "Sprint 2 active",
+      "detail": "Sprint 2 - Find Materials (4) is active."
+    },
+    {
+      "level": "pass",
+      "check": "Sprint point totals",
+      "detail": "Sprint 1: 26 points (including bug); Sprint 2 planned: 23 points."
+    },
+    {
+      "level": "pass",
+      "check": "Remaining Product Backlog",
+      "detail": "5 issues remain: RECL-28, RECL-29, RECL-30, RECL-31, RECL-32."
+    }
+  ],
+  "status": "PASS"
+}

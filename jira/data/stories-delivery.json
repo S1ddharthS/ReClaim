@@ -1,0 +1,193 @@
+[
+  {
+    "id": "US-12",
+    "type": "Story",
+    "summary": "Track Material Delivery",
+    "epic": "E4",
+    "priority": "Highest",
+    "points": 8,
+    "labels": [
+      "transfer",
+      "logistics",
+      "tracking",
+      "delivery"
+    ],
+    "assignee": "Siddharth Sanjay",
+    "sprint": null,
+    "status": "To Do",
+    "userStory": "As a delivery coordinator, I want to track pickup and drop-off so both sides know where materials are.",
+    "context": "Once a hold is approved, the material is scheduled for delivery. Both supplier and buyer see the same step-by-step updates from pickup to delivery.",
+    "acceptanceCriteria": [
+      "After a request is approved, coordinators can enter delivery method, pickup date, driver details, and tracking code.",
+      "Clear delivery stages: Scheduled -> Picked Up -> In Transit -> Delivered -> Completed.",
+      "Every status update shows a date, time, and quick note visible to both buyer and supplier.",
+      "Confirming delivery requires receiver name, delivered quantity, condition check, and a photo of delivery receipt.",
+      "If the delivered amount differs from the requested amount, the system opens a 'Quantity Mismatch' note before finalizing stock.",
+      "Items move from Reserved to Delivered only after delivery is confirmed and any mismatch is resolved.",
+      "Both organizations receive automatic updates at every delivery step."
+    ],
+    "comments": []
+  },
+  {
+    "id": "US-13",
+    "type": "Story",
+    "summary": "Fix Quantity Mismatch on Delivery",
+    "epic": "E4",
+    "priority": "High",
+    "points": 5,
+    "labels": [
+      "discrepancy",
+      "logistics",
+      "inventory",
+      "resolution"
+    ],
+    "assignee": "Siddharth Sanjay",
+    "sprint": null,
+    "status": "To Do",
+    "userStory": "As a delivery coordinator, I want to resolve quantity mismatches so records stay accurate and fair.",
+    "context": "Sometimes the delivered amount is slightly different due to damage or counting differences. This tool lets both sides agree on the final number.",
+    "acceptanceCriteria": [
+      "When delivered quantity doesn't match the reserved quantity, the system creates a mismatch record showing expected, received, and difference.",
+      "Buyer and supplier can add notes and photos for 5 business days after delivery.",
+      "The coordinator resolves the issue as Shortage, Damage, Surplus, or Count Correction with a short note.",
+      "Resolving updates stock once and never allows stock to drop below zero.",
+      "Clear status stages: Open -> Under Review -> Resolved.",
+      "The final agreed numbers and resolution notes are saved in the activity history."
+    ],
+    "comments": []
+  },
+  {
+    "id": "US-14",
+    "type": "Story",
+    "summary": "Track Environmental Savings",
+    "epic": "E5",
+    "priority": "High",
+    "points": 5,
+    "labels": [
+      "impact",
+      "sustainability",
+      "reporting",
+      "analytics"
+    ],
+    "assignee": "Siddharth Sanjay",
+    "sprint": null,
+    "status": "To Do",
+    "userStory": "As a platform manager, I want to see environmental savings so we can celebrate waste prevented and emissions saved.",
+    "context": "ReClaim calculates real environmental benefits from every completed reuse, turning saved kilograms into clear, easy-to-read numbers.",
+    "acceptanceCriteria": [
+      "The report shows total kilograms reused, completed listings, estimated emissions avoided, and waste diverted from landfills.",
+      "Calculations use transparent, documented factors per material category.",
+      "Only completed deliveries are counted; cancelled transfers are automatically excluded.",
+      "Managers can export the report as a simple CSV spreadsheet or PDF document.",
+      "Displayed totals match the sum of completed transfers, and users can click through to see the contributing items.",
+      "Organizations can view their own green impact badge to share on their company reports."
+    ],
+    "comments": []
+  },
+  {
+    "id": "US-15",
+    "type": "Story",
+    "summary": "Manager Overview Dashboard",
+    "epic": "E5",
+    "priority": "Medium",
+    "points": 5,
+    "labels": [
+      "dashboard",
+      "administration",
+      "operations"
+    ],
+    "assignee": "Siddharth Sanjay",
+    "sprint": null,
+    "status": "To Do",
+    "userStory": "As an administrator, I want a simple overview of platform activity so I can keep everything running smoothly.",
+    "context": "A quick bird's-eye view of active members, pending quality checks, open requests, active deliveries, and total reused materials.",
+    "acceptanceCriteria": [
+      "The overview card shows active organizations, items waiting for inspection, listings by status, open requests, and total kilograms reused.",
+      "Cards show when data was last updated.",
+      "Admins can filter by date range and organization name with one click.",
+      "The dashboard highlights items needing attention (like inspections waiting over 48 hours or requests waiting over 24 hours).",
+      "Platform administrators see all organizations, while company users see only their own data.",
+      "You can export summary data to a CSV spreadsheet anytime."
+    ],
+    "comments": []
+  },
+  {
+    "id": "US-16",
+    "type": "Story",
+    "summary": "Manage User Accounts",
+    "epic": "E5",
+    "priority": "Medium",
+    "points": 3,
+    "labels": [
+      "administration",
+      "users",
+      "roles",
+      "security"
+    ],
+    "assignee": "Siddharth Sanjay",
+    "sprint": null,
+    "status": "To Do",
+    "userStory": "As an administrator, I want to manage member accounts and user permissions so the platform stays safe and trusted.",
+    "context": "Admins can verify new company sign-ups, invite team members, assign roles, and pause accounts if needed.",
+    "acceptanceCriteria": [
+      "Admins can view and search all organizations by name or status.",
+      "Admins can approve new sign-ups with one click or pause accounts with a short reason.",
+      "Admins can invite team members with simple roles: Supplier, Buyer, Inspector, Delivery Coordinator, or Administrator.",
+      "Account permissions take effect immediately upon saving.",
+      "Pausing an account safely stops new sign-ins while preserving existing transaction history."
+    ],
+    "comments": []
+  },
+  {
+    "id": "BUG-01",
+    "type": "Bug",
+    "summary": "Reserved Stock Incorrectly Remains Available in Inventory",
+    "epic": "E1",
+    "priority": "High",
+    "points": 2,
+    "labels": [
+      "bug",
+      "inventory",
+      "reservation",
+      "sprint-1",
+      "defect"
+    ],
+    "assignee": "Siddharth Sanjay",
+    "sprint": "SPR-1",
+    "status": "Done",
+    "resolution": "Fixed",
+    "userStory": "",
+    "context": "A material listing has 100 units available. A buyer requests 70 units. The supplier approves the reservation. The system incorrectly continues displaying 100 units as available in inventory instead of decrementing available units and incrementing reserved units.",
+    "environment": "ReClaim staging, build 0.1.0, Chrome on Windows 11, test organization ORG-2026-0042.",
+    "stepsToReproduce": [
+      "List a material surplus with available quantity of 100 units.",
+      "Buyer submits a material request for 70 units.",
+      "Supplier approves the reservation.",
+      "Inspect the Material Inventory Management listing and available quantity display."
+    ],
+    "expectedResult": "Available quantity becomes 30. Reserved quantity becomes 70. Inventory must update correctly after approval. Duplicate reservations must not reduce inventory twice. Available quantity must never become negative.",
+    "actualResult": "Available quantity incorrectly continues displaying 100 units as available while 70 units are marked reserved.",
+    "acceptanceCriteria": [
+      "Available quantity becomes 30 when 70 units are reserved from a 100-unit listing.",
+      "Reserved quantity becomes 70 upon reservation approval.",
+      "Inventory must update correctly and atomically immediately after approval.",
+      "Duplicate reservation approvals must not reduce inventory twice.",
+      "Available quantity must never become negative under any concurrent requests.",
+      "Audit event log records the inventory deduction and reservation transition."
+    ],
+    "comments": [
+      "Root cause: The reservation approval handler was updating the reservation record status to 'Approved' but neglected to execute the atomic inventory decrement on the surplus listing record. An atomic transactional decrement was implemented: available_quantity -= requested_quantity, reserved_quantity += requested_quantity.",
+      "Fix verified in staging: Reservation of 70 units against 100 available units correctly resulted in Available: 30, Reserved: 70. Duplicate approvals rejected by idempotency check. Negative quantity guard confirmed."
+    ],
+    "links": [
+      {
+        "type": "relates to",
+        "target": "US-03"
+      },
+      {
+        "type": "relates to",
+        "target": "US-11"
+      }
+    ]
+  }
+]

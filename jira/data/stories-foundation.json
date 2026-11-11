@@ -1,0 +1,148 @@
+[
+  {
+    "id": "US-01",
+    "type": "Story",
+    "summary": "Add Organization",
+    "epic": "E1",
+    "priority": "High",
+    "points": 3,
+    "labels": [
+      "onboarding",
+      "organization",
+      "foundation"
+    ],
+    "assignee": "Siddharth Sanjay",
+    "sprint": "SPR-1",
+    "status": "Done",
+    "userStory": "As an organization manager, I want to sign up our company so that we can list or request surplus materials.",
+    "context": "Signing up is the first step. Enter your company name, contact person, work email, phone, address, and intended role (Supplier, Buyer, or Both). New accounts are checked by our team before you can create listings or request materials.",
+    "acceptanceCriteria": [
+      "Company name, contact person, work email, phone, operating address, and intended role are required; missing values show an easy-to-understand message next to the field.",
+      "When you finish signing up, the system generates your account reference (like ORG-2026-0001) and shows a friendly confirmation message.",
+      "If someone tries to sign up with the same company name and email domain, we show a clear message: 'An account with this email domain already exists. Please contact support if you need help.'",
+      "Your new account starts as 'Waiting for Verification'. You can list or request items once our team reviews your details.",
+      "We send a confirmation email right away to your registered email address.",
+      "Clicking the submit button twice by mistake will not create a duplicate account."
+    ],
+    "comments": [
+      "Implemented simple registration validation and duplicate detection. Verified required fields, duplicate checks, and pending verification states during Sprint 1 acceptance testing."
+    ]
+  },
+  {
+    "id": "US-02",
+    "type": "Story",
+    "summary": "Add Surplus Material",
+    "epic": "E1",
+    "priority": "Highest",
+    "points": 5,
+    "labels": [
+      "materials",
+      "supplier",
+      "listing",
+      "foundation"
+    ],
+    "assignee": "Siddharth Sanjay",
+    "sprint": "SPR-1",
+    "status": "Done",
+    "userStory": "As a supplier, I want to add our leftover materials so that other teams can find and reuse them.",
+    "context": "When you have leftover materials, you can list them here. Provide the material name, category, condition, quantity, pickup location, and photos so buyers know exactly what is available.",
+    "acceptanceCriteria": [
+      "Suppliers can enter material name, category, simple description, condition, quantity, unit, pickup location, pickup date, and attach photos.",
+      "Quantity must be greater than zero. Condition choices are clear and simple: New, Like New, Good, Fair, or Salvage.",
+      "When submitted, the system gives you a tracking code (like MAT-2026-00001) and shows a success message.",
+      "New items start as 'Waiting for Inspection' and will not appear in buyer search results until checked and approved by an inspector.",
+      "Suppliers can save their progress as a Draft and return to complete it anytime. Only completed listings can be sent for inspection.",
+      "Any edits made to the listing are saved with a date and time so you have a clear activity history."
+    ],
+    "comments": [
+      "Completed add material form, simple quantity/unit validation, listing ID generation, and Waiting for Inspection default. Buyer visibility is held until inspection approval."
+    ]
+  },
+  {
+    "id": "US-03",
+    "type": "Story",
+    "summary": "Manage Stock & Inventory",
+    "epic": "E1",
+    "priority": "High",
+    "points": 5,
+    "labels": [
+      "inventory",
+      "supplier",
+      "consistency"
+    ],
+    "assignee": "Siddharth Sanjay",
+    "sprint": "SPR-1",
+    "status": "Done",
+    "userStory": "As a supplier, I want to manage our material stock so our available quantity is always accurate and up to date.",
+    "context": "Your stock page shows how much material you listed, how much is on hold for buyers, how much has been delivered, and what is still available to share.",
+    "acceptanceCriteria": [
+      "The stock page lists all your materials showing Listed Stock, Reserved Stock, Delivered Stock, and Available Stock (Available = Listed - Reserved - Delivered).",
+      "You cannot enter a negative quantity or reduce stock below what is already reserved or delivered. If you try, a clear message explains why.",
+      "Approving a hold moves that quantity from Available to Reserved right away. If a request is rejected or cancelled, the stock returns to Available.",
+      "Marking a delivery as complete moves items from Reserved to Delivered without counting twice.",
+      "Every stock change shows a clear reason, the person who made it, and the date and time.",
+      "When available stock reaches zero, the item is clearly marked 'Out of Stock' so buyers cannot request it."
+    ],
+    "comments": [
+      "Stock ledger and consistency rules implemented. Tested approval, rejection, cancellation, and delivery completion; available quantity stays accurate and never goes negative."
+    ]
+  },
+  {
+    "id": "US-04",
+    "type": "Story",
+    "summary": "Inspect Material Quality",
+    "epic": "E2",
+    "priority": "Highest",
+    "points": 5,
+    "labels": [
+      "inspection",
+      "quality",
+      "trust"
+    ],
+    "assignee": "Siddharth Sanjay",
+    "sprint": "SPR-1",
+    "status": "Done",
+    "userStory": "As an inspector, I want to check listed materials so that buyers only receive safe, reliable items.",
+    "context": "Inspectors check submitted materials before they go live. You can review photos, condition details, and location to make an approve or reject decision.",
+    "acceptanceCriteria": [
+      "Inspectors can view a list of items 'Waiting for Inspection' and sort by category, location, or how long they have been waiting.",
+      "Inspectors can open the full listing to review supplier details, photos, quantity, location, and condition notes.",
+      "Inspectors can select 'Approve' or 'Reject', select a condition grade, and add friendly notes.",
+      "If rejecting an item, the inspector must choose a reason (such as condition mismatch, safety concern, or missing photos) and write a short explanation.",
+      "Approving an item marks it as 'Verified' so buyers can find it. Rejecting marks it as 'Rejected' and notifies the supplier.",
+      "Inspection reports are saved permanently so both sides can see the notes and photos."
+    ],
+    "comments": [
+      "Inspection queue, decision form, clear rejection reasons, and permanent inspection records completed. Verified only after inspector approval."
+    ]
+  },
+  {
+    "id": "US-05",
+    "type": "Story",
+    "summary": "Check Material Status",
+    "epic": "E2",
+    "priority": "High",
+    "points": 3,
+    "labels": [
+      "verification",
+      "buyer",
+      "trust"
+    ],
+    "assignee": "Siddharth Sanjay",
+    "sprint": "SPR-1",
+    "status": "Done",
+    "userStory": "As a buyer, I want to see verification badges and inspection notes so I know the material is in good condition.",
+    "context": "Buyers need to trust what they are getting. Every verified item displays a clear green badge with inspector notes and photos.",
+    "acceptanceCriteria": [
+      "Every approved item displays a green 'Verified' badge in search results, on the item page, and on the request form.",
+      "Items that are 'Waiting for Inspection' or 'Rejected' are hidden from buyer search, matching, and request forms.",
+      "Buyers can click 'View Inspection Details' to see the inspector's name, inspection date, condition rating, and notes.",
+      "Every status change adds a note to the item's activity history showing old status, new status, person, time, and reason.",
+      "The 'Verified' badge is removed automatically if an item expires or is taken down by the supplier.",
+      "Opening a rejected item by direct web link shows a friendly 'This material is no longer available' message."
+    ],
+    "comments": [
+      "Verified badge, buyer-visible verification summary, status history, and direct link protection completed. Regression checks verified for pending and rejected items."
+    ]
+  }
+]

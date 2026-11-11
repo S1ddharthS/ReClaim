@@ -1,0 +1,87 @@
+{
+  "generatedAt": "2026-11-11T04:49:12.866Z",
+  "site": "https://sjec-team-xyntwxhy.atlassian.net",
+  "projectKey": "RECL",
+  "captures": [
+    {
+      "file": "evidence/screenshots/01_Project_Dashboard.png",
+      "label": "Jira project ReClaim (RECL) summary dashboard",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/jira/software/projects/RECL/summary",
+      "title": "Summary - ReClaim - Jira",
+      "bytes": 226817,
+      "capturedAt": "2026-11-11T04:46:55.746Z"
+    },
+    {
+      "file": "evidence/screenshots/02_Product_Backlog.png",
+      "label": "Product backlog with active Sprint 2 and remaining backlog",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/jira/software/projects/RECL/boards/1/backlog",
+      "title": "ReClaim - Backlog - Jira",
+      "bytes": 195053,
+      "capturedAt": "2026-11-11T04:47:06.323Z"
+    },
+    {
+      "file": "evidence/screenshots/03_User_Story_Details.png",
+      "label": "User story RECL-25 with description, acceptance criteria, epic, sprint and story points",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-25",
+      "title": "[RECL-25] Match Material Requests - Jira",
+      "bytes": 230752,
+      "capturedAt": "2026-11-11T04:47:19.274Z"
+    },
+    {
+      "file": "evidence/screenshots/04_Sprint_1_Planning.png",
+      "label": "Sprint 1 committed scope: 7 items, 26 story points, all assigned",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/issues/?filter=10001",
+      "title": "[Sprint 1 - Committed Scope (26 pts)] Work item search - Jira",
+      "bytes": 184872,
+      "capturedAt": "2026-11-11T04:47:28.451Z"
+    },
+    {
+      "file": "evidence/screenshots/05_Scrum_Board_Execution.png",
+      "label": "Scrum board during Sprint 2 execution with Sprint insights panel",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/jira/software/projects/RECL/boards/1?filter=&groupBy=none",
+      "title": "Board - SCRUM board - Jira",
+      "bytes": 190117,
+      "capturedAt": "2026-11-11T04:47:41.627Z"
+    },
+    {
+      "file": "evidence/screenshots/06_Assigned_Issues.png",
+      "label": "All ReClaim work assigned to Siddharth Sanjay",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/issues/?filter=10004",
+      "title": "[RECL - Assigned Work (Siddharth Sanjay)] Work item search - Jira",
+      "bytes": 346784,
+      "capturedAt": "2026-11-11T04:47:55.731Z"
+    },
+    {
+      "file": "evidence/screenshots/07_Bug_Tracking.png",
+      "label": "Bug RECL-33: High severity, Done, in Sprint 1, resolution and fix verification",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/browse/RECL-33",
+      "title": "[RECL-33] Reserved Stock Incorrectly Remains Available in Inventory - Jira",
+      "bytes": 272280,
+      "capturedAt": "2026-11-11T04:48:12.987Z"
+    },
+    {
+      "file": "evidence/screenshots/08_Sprint_1_Report.png",
+      "label": "Sprint 1 completed result: 7 of 7 items Done, 26 story points",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/issues/?filter=10002",
+      "title": "[Sprint 1 - Completed Result (26 pts)] Work item search - Jira",
+      "bytes": 185503,
+      "capturedAt": "2026-11-11T04:48:29.282Z"
+    },
+    {
+      "file": "evidence/screenshots/09_Sprint_2_Board.png",
+      "label": "Sprint 2 board with sprint dates, 4 To Do and 1 In Progress",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/jira/software/projects/RECL/boards/1?filter=&groupBy=none",
+      "title": "Board - SCRUM board - Jira",
+      "bytes": 169641,
+      "capturedAt": "2026-11-11T04:48:53.544Z"
+    },
+    {
+      "file": "evidence/screenshots/10_Final_Dashboard.png",
+      "label": "Final ReClaim project summary: status, priority and work type breakdown",
+      "url": "https://sjec-team-xyntwxhy.atlassian.net/jira/software/projects/RECL/summary",
+      "title": "Summary - ReClaim - Jira",
+      "bytes": 243518,
+      "capturedAt": "2026-11-11T04:49:12.699Z"
+    }
+  ]
+}

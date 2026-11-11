@@ -1,0 +1,167 @@
+[
+  {
+    "id": "US-06",
+    "type": "Story",
+    "summary": "Handle Expired Listings",
+    "epic": "E2",
+    "priority": "Medium",
+    "points": 3,
+    "labels": [
+      "expiry",
+      "supplier",
+      "listing"
+    ],
+    "assignee": "Siddharth Sanjay",
+    "sprint": "SPR-2",
+    "status": "In Progress",
+    "userStory": "As a supplier, I want old listings to expire automatically so buyers do not request materials that are no longer available.",
+    "context": "Surplus materials are often only available for a certain time. Old listings expire automatically to keep the marketplace fresh and avoid disappointed buyers.",
+    "acceptanceCriteria": [
+      "Suppliers can set an expiry date when adding or editing a material listing.",
+      "When the expiry date passes, the system marks the item as 'Expired' and takes it out of buyer search results.",
+      "Expired materials will not appear in search or matching, but any existing approved reservation remains valid.",
+      "Suppliers can easily renew an expired listing by picking a new future date.",
+      "We send a friendly email reminder 7 days before an item expires so you can renew it if needed."
+    ],
+    "comments": []
+  },
+  {
+    "id": "US-07",
+    "type": "Story",
+    "summary": "Search Materials",
+    "epic": "E3",
+    "priority": "High",
+    "points": 3,
+    "labels": [
+      "search",
+      "discovery",
+      "buyer"
+    ],
+    "assignee": "Siddharth Sanjay",
+    "sprint": "SPR-1",
+    "status": "Done",
+    "userStory": "As a buyer, I want to search for materials by keyword or category so that I can quickly find what I need.",
+    "context": "Buyers use search to discover available materials. Results only show checked, available materials and update smoothly.",
+    "acceptanceCriteria": [
+      "Search matches material names and description words, and handles uppercase, lowercase, and minor spelling differences.",
+      "Buyers can filter by one or more material categories, and the list updates instantly without reloading the page.",
+      "Search only shows Verified, in-stock materials that have not expired.",
+      "If no materials match, a friendly message says 'No materials match your search' and offers a 'Clear Filters' button.",
+      "Results are organized into easy-to-browse pages of 20 items, and you can share your search link with teammates."
+    ],
+    "comments": [
+      "Search by name, category filters, pagination, and empty state completed. Quality and stock checks apply to all search branches."
+    ]
+  },
+  {
+    "id": "US-08",
+    "type": "Story",
+    "summary": "Find Nearby Materials",
+    "epic": "E3",
+    "priority": "Medium",
+    "points": 5,
+    "labels": [
+      "location",
+      "discovery",
+      "buyer",
+      "logistics"
+    ],
+    "assignee": "Siddharth Sanjay",
+    "sprint": "SPR-2",
+    "status": "To Do",
+    "userStory": "As a buyer, I want to find materials near my location so that we can save on transport time and costs.",
+    "context": "Finding materials close to your site saves transport costs and reduces carbon emissions. You can easily filter by distance or city.",
+    "acceptanceCriteria": [
+      "Every listing clearly shows pickup city, state, and country.",
+      "Buyers can filter by city and choose a distance radius: 25 km, 50 km, 100 km, or 250 km from their site.",
+      "When a location filter is selected, materials are sorted with the closest items first, showing distance in kilometers.",
+      "Listings without location coordinates still appear in regular keyword search with the note 'Location not specified'.",
+      "If an unrecognised city is entered, a helpful message explains 'Please check your city or pin code' instead of showing a blank screen.",
+      "Your chosen location and distance remain saved as you browse through search results."
+    ],
+    "comments": []
+  },
+  {
+    "id": "US-09",
+    "type": "Story",
+    "summary": "Match Material Requests",
+    "epic": "E3",
+    "priority": "High",
+    "points": 5,
+    "labels": [
+      "matching",
+      "discovery",
+      "buyer",
+      "requirements"
+    ],
+    "assignee": "Siddharth Sanjay",
+    "sprint": "SPR-2",
+    "status": "To Do",
+    "userStory": "As a buyer, I want to enter my project needs so the system can match me with the right surplus materials.",
+    "context": "Instead of searching manually, enter what material you need, how much you need, and when. The system will find the best matches for you.",
+    "acceptanceCriteria": [
+      "Buyers can create a request with material category, needed quantity, needed-by date, and maximum distance.",
+      "The system matches verified, available listings that have enough stock to meet your needs.",
+      "Each matching item shows a simple match score (like 95% Match) and explains why (e.g., 'Right category, 15 km away, enough stock').",
+      "If no materials match your exact needs, the system offers helpful tips, like broadening your search distance or quantity.",
+      "You can save your project requirements and re-run them whenever new materials are added."
+    ],
+    "comments": []
+  },
+  {
+    "id": "US-10",
+    "type": "Story",
+    "summary": "Request Material",
+    "epic": "E4",
+    "priority": "Highest",
+    "points": 5,
+    "labels": [
+      "request",
+      "buyer",
+      "reservation"
+    ],
+    "assignee": "Siddharth Sanjay",
+    "sprint": "SPR-2",
+    "status": "To Do",
+    "userStory": "As a buyer, I want to request material from a supplier so they can hold stock for our project.",
+    "context": "When you find what you need, submit a request. The supplier reviews it and reserves the stock for you upon approval.",
+    "acceptanceCriteria": [
+      "Select any verified material and enter the quantity you need (up to the available amount).",
+      "Enter your planned reuse, needed-by date, whether you will pick it up or need delivery, and your contact person.",
+      "Submitting creates a request reference (like REQ-2026-00001) marked 'Waiting for Supplier Review', and alerts the supplier.",
+      "You cannot submit duplicate requests for the same material while your first request is pending.",
+      "Suppliers see your request right away on their dashboard with your organization name and requested quantity.",
+      "You can withdraw your request at any time before the supplier approves it.",
+      "Submitting a request does not lock stock until the supplier clicks 'Approve Request'."
+    ],
+    "comments": []
+  },
+  {
+    "id": "US-11",
+    "type": "Story",
+    "summary": "Approve Material Requests",
+    "epic": "E4",
+    "priority": "Highest",
+    "points": 5,
+    "labels": [
+      "reservation",
+      "supplier",
+      "inventory",
+      "approval"
+    ],
+    "assignee": "Siddharth Sanjay",
+    "sprint": "SPR-2",
+    "status": "To Do",
+    "userStory": "As a supplier, I want to approve or reject buyer requests so I can manage who gets our surplus materials.",
+    "context": "Suppliers review incoming requests. Approving a request puts the stock on hold so no one else can take it.",
+    "acceptanceCriteria": [
+      "Suppliers can review request details: buyer organization, quantity needed, project use, and requested pickup date.",
+      "Clicking 'Approve Request' puts the requested quantity on hold (moves it from Available to Reserved) in one step.",
+      "If stock is no longer available when you click approve, the system clearly notifies you: 'Available stock has changed. Please review updated quantities.'",
+      "If you must reject a request, select a reason (e.g. 'Not enough stock' or 'Schedule conflict') and add a friendly note for the buyer.",
+      "Suppliers can offer a partial quantity if they don't have the full amount. The buyer receives a message to accept or decline.",
+      "Both buyer and supplier receive instant notifications and can view the request status timeline."
+    ],
+    "comments": []
+  }
+]

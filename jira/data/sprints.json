@@ -1,0 +1,28 @@
+[
+  {
+    "id": "SPR-1",
+    "name": "Sprint 1 - Foundation",
+    "goal": "Allow organizations to sign up, add leftover materials, check stock, and set up inspections.",
+    "startDate": "2026-11-02T09:00:00.000+05:30",
+    "endDate": "2026-11-08T12:00:00.000+05:30",
+    "plannedPoints": 24,
+    "bugPoints": 2,
+    "capacityPoints": 26,
+    "scope": ["US-01", "US-02", "US-03", "US-04", "US-05", "US-07", "BUG-01"],
+    "status": "closed",
+    "outcome": "All six committed stories and the bug were completed. Sprint 1 delivered 26 story points and fixed the reservation bug. Testing confirmed that unverified items are hidden from search and stock updates correctly."
+  },
+  {
+    "id": "SPR-2",
+    "name": "Sprint 2 - Find Materials",
+    "goal": "Help buyers find materials, check nearby listings, and submit material requests.",
+    "startDate": "2026-11-08T14:00:00.000+05:30",
+    "endDate": "2026-11-20T18:00:00.000+05:30",
+    "plannedPoints": 23,
+    "bugPoints": 0,
+    "capacityPoints": 26,
+    "scope": ["US-06", "US-08", "US-09", "US-10", "US-11"],
+    "status": "active",
+    "outcome": "Sprint 2 is active. The team is building the path from finding materials to approving buyer requests. Deliveries, quantity mismatches, and impact reports are planned for Sprint 3."
+  }
+]

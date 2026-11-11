@@ -1,0 +1,45 @@
+{
+  "name": "ReClaim",
+  "fullName": "Industrial Surplus Intelligence & Resource Recovery Platform",
+  "key": "RECL",
+  "projectTypeKey": "software",
+  "projectTemplateKey": "com.pyxis.greenhopper.jira:gh-simplified-agility-scrum",
+  "methodology": "Agile Scrum",
+  "domain": "Industrial Sustainability / Circular Economy / Resource Management",
+  "description": "ReClaim connects businesses with leftover industrial and building materials to organizations that can reuse them. The platform helps you sign up your organization, list leftover materials, keep stock accurate, check material quality, search for materials nearby, request items, and track deliveries. Our goal is simple: prevent good materials from going to waste and help teams reuse what already exists.",
+  "vision": "Help businesses easily find, check, and reuse leftover materials instead of throwing them away.",
+  "leadDisplayName": "Siddharth Sanjay",
+  "defaultAssigneeMode": "solo",
+  "boardName": "ReClaim Scrum Board",
+  "issueTypes": {
+    "epic": "Epic",
+    "story": "Story",
+    "bug": "Bug",
+    "task": "Task"
+  },
+  "team": [
+    {
+      "role": "Product Owner",
+      "displayName": "Siddharth Sanjay",
+      "jiraAssignee": "Siddharth Sanjay",
+      "note": "Solo assignment mode: all issues are assigned to the Jira account owner."
+    }
+  ],
+  "workingAgreement": {
+    "sprintLength": "One week for Sprint 1 because it closes the foundation slice; Sprint 2 runs for two weeks.",
+    "definitionOfReady": [
+      "User story statement is present and role-oriented.",
+      "At least four independently testable acceptance criteria are defined.",
+      "Priority and Fibonacci story points are agreed.",
+      "Epic and sprint allocation are set.",
+      "Dependencies and test approach are identified."
+    ],
+    "definitionOfDone": [
+      "Acceptance criteria are verified.",
+      "Code review and automated checks pass.",
+      "No open blocker defects remain.",
+      "Documentation and test evidence are updated.",
+      "Product Owner accepts the story."
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-11-08T12:34:40.059Z",
+  "events": [
+    {
+      "at": "2026-11-08T12:34:36.889Z",
+      "level": "info",
+      "message": "Added 5 issues to RECL Sprint 2 - Discovery.",
+      "data": {
+        "issues": [
+          "RECL-22",
+          "RECL-24",
+          "RECL-25",
+          "RECL-26",
+          "RECL-27"
+        ]
+      }
+    },
+    {
+      "at": "2026-11-08T12:34:37.918Z",
+      "level": "info",
+      "message": "Started sprint RECL Sprint 2 - Discovery."
+    },
+    {
+      "at": "2026-11-08T12:34:39.038Z",
+      "level": "info",
+      "message": "RECL-22 moved To Do -> In Progress."
+    },
+    {
+      "at": "2026-11-08T12:34:40.057Z",
+      "level": "info",
+      "message": "Sprint 2 is active with the selected remaining backlog."
+    }
+  ]
+}

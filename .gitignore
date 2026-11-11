@@ -1,0 +1,5 @@
+.env
+*.env.local
+automation/.auth/
+node_modules/
+*.log

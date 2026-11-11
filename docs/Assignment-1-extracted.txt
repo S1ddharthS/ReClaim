@@ -1,0 +1,91 @@
+PAGES 3
+
+--- PAGE 1 ---
+
+Software Engineering Assignment – Jira & Scrum
+Assignment Title:
+Agile Software Development using Scrum and Jira
+Objective:
+To understand and practically implement the Scrum framework using Jira by creating a 
+software project, preparing a Product Backlog, planning a Sprint, assigning tasks, tracking 
+progress, and documenting the Sprint outcome.
+Question
+Create and manage a software project using Jira by following the Scrum framework.
+You will be assigned one unique software system from the list provided by the faculty. 
+Using Jira, create a Scrum project and demonstrate the complete workflow from Product 
+Backlog → Sprint Planning → Task Execution → Progress Tracking → Sprint 
+Completion.
+Your Jira project must contain:
+1. Project creation using the Scrum framework.
+2. A suitable Product Backlog containing at least 10 user stories/tasks.
+3. Each user story should contain:
+o User story description
+o Priority
+o Story points
+o Acceptance criteria
+4. Create at least 2 Sprints.
+5. Move selected backlog items into Sprint 1 and perform Sprint Planning.
+6. Assign issues to team members.
+7. Update issue status as work progresses, such as:
+To Do → In Progress → Done
+8. Create at least one Bug and track its resolution.
+9. Complete Sprint 1 and record the Sprint result.
+10. Create Sprint 2 using the remaining backlog items.
+11. Show the Jira Scrum Board and progress of your project.
+12. Submit screenshots as evidence of your work.
+🔴 Important: Individualized Work
+To ensure that no two students have the same output:
+ Each student/team will be given a different software project scenario.
+ Students must create their own user stories, priorities, story points, task 
+assignments and sprint planning.
+ Copying user stories, screenshots or Jira boards from another student is not 
+allowed.
+ Screenshots must clearly show the student's own Jira project/board.
+
+--- PAGE 2 ---
+
+ Screenshot Requirement
+Students must submit minimum 8 screenshots, including:
+1. Jira project creation/project dashboard
+2. Product Backlog
+3. User story with description & acceptance criteria
+4. Sprint 1 planning
+5. Scrum Board during execution
+6. Assigned tasks/issues
+7. Bug created and its status
+8. Completed Sprint / Sprint Report
+9. Sprint 2 board
+10. Final project dashboard/report
+Each screenshot must contain the student's Jira project name/key or other identifiable 
+project information.
+📋 Suggested Project Scenarios
+You can distribute different scenarios so students don't get identical work:
+No. Software System
+1 Online Food Delivery System
+2 Hospital Appointment System
+3 College Event Management System
+4 Vehicle Rental System
+5 Online Examination System
+6 Library Management System
+7 Hostel Management System
+8 Bus Ticket Booking System
+9 Gym Management System
+10 Online Grocery System
+11 Blood Bank Management System
+12 Hotel Room Booking System
+13 College Placement Management System
+14 Online Course Management System
+15 Courier Tracking System
+16 Parking Management System
+17 Movie Ticket Booking System
+18 Pet Clinic Management System
+19 Restaurant Table Booking System
+20 Travel Package Booking System
+⭐ One extra rule I strongly recommend
+
+--- PAGE 3 ---
+
+The final Jira output should not be identical even if two students receive the same 
+domain. The Product Backlog, user stories, story points, priorities, sprint contents, 
+assignments and bugs must be independently created.
+Date of Submission: 31/10/26

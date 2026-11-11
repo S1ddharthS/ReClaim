@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReClaim — Software Engineering Jira & Scrum Assignment Report</title>
+  <style>
+    :root {
+      --primary: #0F766E;
+      --primary-dark: #115E59;
+      --text: #0F172A;
+      --text-muted: #475569;
+      --border: #CBD5E1;
+      --bg: #FFFFFF;
+      --card-bg: #F8FAFC;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .meta-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      font-size: 0.95rem;
+    }
+
+    .meta-item strong {
+      display: block;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+      margin-top: 36px;
+      margin-bottom: 16px;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+
+    p { margin-bottom: 14px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.9rem;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+    }
+
+    th {
+      background: #F1F5F9;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    tr:nth-child(even) { background: #F8FAFC; }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .badge-pass { background: #DCFCE7; color: #166534; border: 1px solid #BBF7D0; }
+    .badge-done { background: #E0E7FF; color: #3730A3; }
+    .badge-active { background: #FEF3C7; color: #92400E; }
+
+    .evidence-figure {
+      margin: 28px 0;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+      page-break-inside: avoid;
+    }
+
+    .evidence-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .evidence-caption {
+      padding: 14px 18px;
+      background: var(--card-bg);
+      font-size: 0.9rem;
+    }
+
+    .evidence-caption strong {
+      display: block;
+      font-size: 1rem;
+      color: var(--primary-dark);
+      margin-bottom: 4px;
+    }
+
+    @media print {
+      body { padding: 0; }
+      .container { max-width: 100%; }
+      .evidence-figure { box-shadow: none; margin: 20px 0; }
+      h2 { page-break-before: always; }
+      h2:first-of-type { page-break-before: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Software Engineering Assignment 1 — Scrum & Jira</h1>
+      <div class="subtitle">Practical Implementation Report: ReClaim Platform</div>
+      
+      <div class="meta-box">
+        <div class="meta-item">
+          <strong>Student Name</strong>
+          Siddharth Sanjay
+        </div>
+        <div class="meta-item">
+          <strong>Institutional Email</strong>
+          24c52.siddharth@sjec.ac.in
+        </div>
+        <div class="meta-item">
+          <strong>Jira Project Key</strong>
+          RECL (Project ID: 10000)
+        </div>
+        <div class="meta-item">
+          <strong>Live Jira Site</strong>
+          <a href="https://sjec-team-xyntwxhy.atlassian.net/jira/software/projects/RECL/summary" target="_blank">sjec-team-xyntwxhy.atlassian.net</a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>1. Project Overview & Concept</h2>
+      <p>
+        <strong>ReClaim</strong> is an industrial surplus intelligence and resource recovery platform that connects organizations holding unused building and manufacturing materials with organizations that can reuse them.
+      </p>
+      <p>
+        Unlike a generic classified ads board, ReClaim enforces a strict verification lifecycle:
+        <strong>Register → Inspect → Verify → Discover → Request → Reserve → Transfer → Confirm Delivery → Calculate Impact</strong>.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Requirement</th>
+            <th>Specification</th>
+            <th>Implementation Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Scrum Project Creation</td>
+            <td>Jira Cloud team-managed Scrum project</td>
+            <td><span class="badge badge-pass">VERIFIED IN JIRA</span> (Key: <code>RECL</code>)</td>
+          </tr>
+          <tr>
+            <td>Product Backlog Size</td>
+            <td>Minimum 10 user stories</td>
+            <td><span class="badge badge-pass">VERIFIED IN JIRA</span> (16 Stories + 1 Defect = 75 pts)</td>
+          </tr>
+          <tr>
+            <td>Estimates & Priorities</td>
+            <td>Fibonacci story points & priorities on all items</td>
+            <td><span class="badge badge-pass">VERIFIED IN JIRA</span> (100% estimated & prioritized)</td>
+          </tr>
+          <tr>
+            <td>Acceptance Criteria</td>
+            <td>Numbered testable criteria + Definition of Done</td>
+            <td><span class="badge badge-pass">VERIFIED IN JIRA</span> (Complete on all 16 stories)</td>
+          </tr>
+          <tr>
+            <td>Sprint Planning</td>
+            <td>At least 2 Sprints planned</td>
+            <td><span class="badge badge-pass">VERIFIED IN JIRA</span> (Sprint 1: 26 pts, Sprint 2: 23 pts)</td>
+          </tr>
+          <tr>
+            <td>Task Execution & Workflow</td>
+            <td>To Do → In Progress → Done workflow</td>
+            <td><span class="badge badge-pass">VERIFIED IN JIRA</span> (Demonstrated on Scrum board)</td>
+          </tr>
+          <tr>
+            <td>Defect Tracking</td>
+            <td>Create and track at least 1 Bug to resolution</td>
+            <td><span class="badge badge-pass">VERIFIED IN JIRA</span> (RECL-33: Done, fix verified)</td>
+          </tr>
+          <tr>
+            <td>Sprint Completion</td>
+            <td>Complete Sprint 1 and record report</td>
+            <td><span class="badge badge-pass">VERIFIED IN JIRA</span> (Sprint 1 closed, 0 carry-over)</td>
+          </tr>
+          <tr>
+            <td>Sprint 2 Creation</td>
+            <td>Active Sprint 2 from remaining backlog</td>
+            <td><span class="badge badge-pass">VERIFIED IN JIRA</span> (Sprint 2 - Find Materials active)</td>
+          </tr>
+          <tr>
+            <td>Dashboard & Reports</td>
+            <td>Live project summary and reporting views</td>
+            <td><span class="badge badge-pass">VERIFIED IN JIRA</span> (project summary + saved-filter reports)</td>
+          </tr>
+          <tr>
+            <td>Screenshot Evidence</td>
+            <td>Minimum 8 unedited screenshots</td>
+            <td><span class="badge badge-pass">VERIFIED IN JIRA</span> (10 unedited captures)</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>2. Complete Product Backlog Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Type</th>
+            <th>Summary</th>
+            <th>Epic</th>
+            <th>Pts</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Sprint</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>RECL-17</code></td>
+            <td>Story</td>
+            <td>Add Organization</td>
+            <td>RECL-5</td>
+            <td>3</td>
+            <td>High</td>
+            <td><span class="badge badge-done">Done</span></td>
+            <td>Sprint 1 (Closed)</td>
+          </tr>
+          <tr>
+            <td><code>RECL-18</code></td>
+            <td>Story</td>
+            <td>Add Surplus Material</td>
+            <td>RECL-5</td>
+            <td>5</td>
+            <td>Highest</td>
+            <td><span class="badge badge-done">Done</span></td>
+            <td>Sprint 1 (Closed)</td>
+          </tr>
+          <tr>
+            <td><code>RECL-19</code></td>
+            <td>Story</td>
+            <td>Manage Stock & Inventory</td>
+            <td>RECL-5</td>
+            <td>5</td>
+            <td>High</td>
+            <td><span class="badge badge-done">Done</span></td>
+            <td>Sprint 1 (Closed)</td>
+          </tr>
+          <tr>
+            <td><code>RECL-20</code></td>
+            <td>Story</td>
+            <td>Inspect Material Quality</td>
+            <td>RECL-6</td>
+            <td>5</td>
+            <td>Highest</td>
+            <td><span class="badge badge-done">Done</span></td>
+            <td>Sprint 1 (Closed)</td>
+          </tr>
+          <tr>
+            <td><code>RECL-21</code></td>
+            <td>Story</td>
+            <td>Check Material Status</td>
+            <td>RECL-6</td>
+            <td>3</td>
+            <td>High</td>
+            <td><span class="badge badge-done">Done</span></td>
+            <td>Sprint 1 (Closed)</td>
+          </tr>
+          <tr>
+            <td><code>RECL-23</code></td>
+            <td>Story</td>
+            <td>Search Materials</td>
+            <td>RECL-7</td>
+            <td>3</td>
+            <td>High</td>
+            <td><span class="badge badge-done">Done</span></td>
+            <td>Sprint 1 (Closed)</td>
+          </tr>
+          <tr>
+            <td><code>RECL-33</code></td>
+            <td>Bug</td>
+            <td>Reserved Stock Incorrectly Remains Available in Inventory</td>
+            <td>RECL-5</td>
+            <td>2</td>
+            <td>High</td>
+            <td><span class="badge badge-done">Done (fix verified)</span></td>
+            <td>Sprint 1 (Closed)</td>
+          </tr>
+          <tr>
+            <td><code>RECL-22</code></td>
+            <td>Story</td>
+            <td>Handle Expired Listings</td>
+            <td>RECL-6</td>
+            <td>3</td>
+            <td>Medium</td>
+            <td><span class="badge badge-active">In Progress</span></td>
+            <td>Sprint 2 (Active)</td>
+          </tr>
+          <tr>
+            <td><code>RECL-24</code></td>
+            <td>Story</td>
+            <td>Find Nearby Materials</td>
+            <td>RECL-7</td>
+            <td>5</td>
+            <td>Medium</td>
+            <td>To Do</td>
+            <td>Sprint 2 (Active)</td>
+          </tr>
+          <tr>
+            <td><code>RECL-25</code></td>
+            <td>Story</td>
+            <td>Match Material Requests</td>
+            <td>RECL-7</td>
+            <td>5</td>
+            <td>High</td>
+            <td>To Do</td>
+            <td>Sprint 2 (Active)</td>
+          </tr>
+          <tr>
+            <td><code>RECL-26</code></td>
+            <td>Story</td>
+            <td>Request Material</td>
+            <td>RECL-8</td>
+            <td>5</td>
+            <td>Highest</td>
+            <td>To Do</td>
+            <td>Sprint 2 (Active)</td>
+          </tr>
+          <tr>
+            <td><code>RECL-27</code></td>
+            <td>Story</td>
+            <td>Approve Material Requests</td>
+            <td>RECL-8</td>
+            <td>5</td>
+            <td>Highest</td>
+            <td>To Do</td>
+            <td>Sprint 2 (Active)</td>
+          </tr>
+          <tr>
+            <td><code>RECL-28</code></td>
+            <td>Story</td>
+            <td>Track Material Delivery</td>
+            <td>RECL-8</td>
+            <td>8</td>
+            <td>Highest</td>
+            <td>To Do</td>
+            <td>Product Backlog</td>
+          </tr>
+          <tr>
+            <td><code>RECL-29</code></td>
+            <td>Story</td>
+            <td>Fix Quantity Mismatch on Delivery</td>
+            <td>RECL-8</td>
+            <td>5</td>
+            <td>High</td>
+            <td>To Do</td>
+            <td>Product Backlog</td>
+          </tr>
+          <tr>
+            <td><code>RECL-30</code></td>
+            <td>Story</td>
+            <td>Track Environmental Savings</td>
+            <td>RECL-9</td>
+            <td>5</td>
+            <td>High</td>
+            <td>To Do</td>
+            <td>Product Backlog</td>
+          </tr>
+          <tr>
+            <td><code>RECL-31</code></td>
+            <td>Story</td>
+            <td>Manager Overview Dashboard</td>
+            <td>RECL-9</td>
+            <td>5</td>
+            <td>Medium</td>
+            <td>To Do</td>
+            <td>Product Backlog</td>
+          </tr>
+          <tr>
+            <td><code>RECL-32</code></td>
+            <td>Story</td>
+            <td>Manage User Accounts</td>
+            <td>RECL-9</td>
+            <td>3</td>
+            <td>Medium</td>
+            <td>To Do</td>
+            <td>Product Backlog</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>3. Sprint Planning & Defect Tracking</h2>
+      <h3>Sprint 1 — Foundation</h3>
+      <p>
+        <strong>Committed:</strong> 26 story points across 6 user stories and defect <code>RECL-33</code>.<br>
+        <strong>Completed:</strong> 26 story points (100% completion rate). All 7 issues moved to Done. Sprint closed with zero carry-over.
+      </p>
+
+      <h3>Defect <code>RECL-33</code>: Reserved Stock Defect</h3>
+      <p>
+        <strong>Title:</strong> <em>Reserved Stock Incorrectly Remains Available in Inventory</em><br>
+        <strong>Scenario:</strong> 100 units available; buyer requests 70 units; supplier approves reservation. Inventory incorrectly continued displaying 100 units available.<br>
+        <strong>Expected:</strong> Available stock becomes 30; Reserved stock becomes 70; inventory updates atomically.<br>
+        <strong>Resolution:</strong> Done, with the fix verified. An atomic inventory decrement transaction was implemented, verified in staging, and linked to <code>RECL-19</code> and <code>RECL-27</code>. Status: <strong>Done</strong>.
+      </p>
+
+      <h3>Sprint 2 — Find Materials</h3>
+      <p>
+        <strong>Planned:</strong> 23 story points across 5 user stories (<code>RECL-22</code>, <code>RECL-24</code>, <code>RECL-25</code>, <code>RECL-26</code>, <code>RECL-27</code>).<br>
+        <strong>Current State:</strong> Active. Story <code>RECL-22</code> is <strong>In Progress</strong>; 4 stories in <strong>To Do</strong>.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Screenshot Evidence (10 Unedited Jira Captures)</h2>
+
+      <!-- 01 -->
+      <div class="evidence-figure">
+        <img src="../ReClaim_Evidence/01_Project_Dashboard.png" alt="01 Project Dashboard" class="evidence-img">
+        <div class="evidence-caption">
+          <strong>Figure 1: Project Creation / Project Summary</strong>
+          Shows project name <em>ReClaim</em>, key <code>RECL</code>, 22 work items, and the Done 7 / In Progress 1 / To Do 14 status split.
+        </div>
+      </div>
+
+      <!-- 02 -->
+      <div class="evidence-figure">
+        <img src="../ReClaim_Evidence/02_Product_Backlog.png" alt="02 Product Backlog" class="evidence-img">
+        <div class="evidence-caption">
+          <strong>Figure 2: Product Backlog</strong>
+          Shows the Jira Backlog view with active Sprint 2 - Find Materials (5 items, 23 points) and the remaining 26-point Product Backlog.
+        </div>
+      </div>
+
+      <!-- 03 -->
+      <div class="evidence-figure">
+        <img src="../ReClaim_Evidence/03_User_Story_Details.png" alt="03 User Story Details" class="evidence-img">
+        <div class="evidence-caption">
+          <strong>Figure 3: User Story Details (RECL-25: Match Material Requests)</strong>
+          Shows the user story statement, context, numbered acceptance criteria, Definition of Done, priority High, 5 story points, epic Find Materials Easily, Sprint 2 and assignee Siddharth Sanjay.
+        </div>
+      </div>
+
+      <!-- 04 -->
+      <div class="evidence-figure">
+        <img src="../ReClaim_Evidence/04_Sprint_1_Planning.png" alt="04 Sprint 1 Planning" class="evidence-img">
+        <div class="evidence-caption">
+          <strong>Figure 4: Sprint 1 Planning (Filter 10001)</strong>
+          Shows Sprint 1 - Committed Scope: 7 issues totaling 26 story points (6 user stories + 1 bug), all assigned.
+        </div>
+      </div>
+
+      <!-- 05 -->
+      <div class="evidence-figure">
+        <img src="../ReClaim_Evidence/05_Scrum_Board_Execution.png" alt="05 Scrum Board Execution" class="evidence-img">
+        <div class="evidence-caption">
+          <strong>Figure 5: Scrum Board During Execution</strong>
+          Shows the Sprint 2 board with Sprint insights open: 4 To Do, 1 In Progress, and 13% in progress.
+        </div>
+      </div>
+
+      <!-- 06 -->
+      <div class="evidence-figure">
+        <img src="../ReClaim_Evidence/06_Assigned_Issues.png" alt="06 Assigned Issues" class="evidence-img">
+        <div class="evidence-caption">
+          <strong>Figure 6: Assigned Tasks & Issues (Filter 10004)</strong>
+          Shows all 22 ReClaim work items assigned to project owner Siddharth Sanjay with keys, summaries, statuses, priorities, and story points.
+        </div>
+      </div>
+
+      <!-- 07 -->
+      <div class="evidence-figure">
+        <img src="../ReClaim_Evidence/07_Bug_Tracking.png" alt="07 Bug Tracking" class="evidence-img">
+        <div class="evidence-caption">
+          <strong>Figure 7: Bug Created & Resolved (RECL-33)</strong>
+          Shows defect <em>Reserved Stock Incorrectly Remains Available in Inventory</em> with High priority, reproduction steps, expected/actual outputs, fix verification, status Done, and the Sprint 1 - Foundation popover.
+        </div>
+      </div>
+
+      <!-- 08 -->
+      <div class="evidence-figure">
+        <img src="../ReClaim_Evidence/08_Sprint_1_Report.png" alt="08 Sprint 1 Report" class="evidence-img">
+        <div class="evidence-caption">
+          <strong>Figure 8: Completed Sprint 1 Result (Filter 10002)</strong>
+          JQL view proving that all 7 committed items (26 points) in Sprint 1 were completed with zero carry-over.
+        </div>
+      </div>
+
+      <!-- 09 -->
+      <div class="evidence-figure">
+        <img src="../ReClaim_Evidence/09_Sprint_2_Board.png" alt="09 Sprint 2 Board" class="evidence-img">
+        <div class="evidence-caption">
+          <strong>Figure 9: Sprint 2 Active Board</strong>
+          Shows the active Sprint 2 - Find Materials board with the Sprint details popover for 8 Nov - 20 Nov 2026, 4 To Do items, and <code>RECL-22</code> In Progress.
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="evidence-figure">
+        <img src="../ReClaim_Evidence/10_Final_Dashboard.png" alt="10 Final Dashboard" class="evidence-img">
+        <div class="evidence-caption">
+          <strong>Figure 10: Final Project Summary</strong>
+          Shows the final project summary with overall progress, priority breakdown, work type breakdown, team workload, and epic progress.
+        </div>
+      </div>
+    </section>
+
+    <footer style="margin-top: 48px; border-top: 1px solid var(--border); padding-top: 20px; font-size: 0.85rem; color: var(--text-muted); text-align: center;">
+      ReClaim Scrum & Jira Software Engineering Report • Siddharth Sanjay (24c52.siddharth@sjec.ac.in) • All rights reserved
+    </footer>
+  </div>
+
+</body>
+</html>

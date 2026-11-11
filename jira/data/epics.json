@@ -1,0 +1,62 @@
+[
+  {
+    "id": "E1",
+    "summary": "Register Organizations & Add Materials",
+    "color": "#0B6E4F",
+    "labels": [
+      "epic",
+      "registry",
+      "foundation"
+    ],
+    "description": "Help organizations join the platform and list their leftover materials. Covers signing up, adding materials, managing stock, and keeping quantities accurate.",
+    "outcome": "A verified organization can sign up, list surplus materials, and easily see what is available, reserved, or delivered."
+  },
+  {
+    "id": "E2",
+    "summary": "Check & Verify Materials",
+    "color": "#1F6FEB",
+    "labels": [
+      "epic",
+      "inspection",
+      "trust"
+    ],
+    "description": "Check the condition and quality of listed materials before buyers see them. Certified inspectors review each item so only good-quality materials are shared.",
+    "outcome": "Buyers only see materials that have passed quality checks, with clear photos and condition notes."
+  },
+  {
+    "id": "E3",
+    "summary": "Find Materials Easily",
+    "color": "#8250DF",
+    "labels": [
+      "epic",
+      "discovery",
+      "buyer"
+    ],
+    "description": "Help buyers quickly find the materials they need using simple search, category filters, distance, and project requirements.",
+    "outcome": "Buyers can search by keyword or nearby location and instantly find matching, verified materials."
+  },
+  {
+    "id": "E4",
+    "summary": "Reservations & Deliveries",
+    "color": "#BC4C00",
+    "labels": [
+      "epic",
+      "reservation",
+      "logistics"
+    ],
+    "description": "Handle requests, reservations, and delivery tracking. Covers supplier approval, transport updates, delivery confirmation, and fixing quantity mismatches.",
+    "outcome": "Buyers can request items, suppliers can approve holds, and both sides can track deliveries from pickup to drop-off."
+  },
+  {
+    "id": "E5",
+    "summary": "Environmental Impact & Admin",
+    "color": "#6E7781",
+    "labels": [
+      "epic",
+      "analytics",
+      "administration"
+    ],
+    "description": "Give managers clear reports on saved materials, avoided waste, user accounts, and platform activity.",
+    "outcome": "Managers can see how much waste was prevented, view environmental savings, and manage member accounts."
+  }
+]

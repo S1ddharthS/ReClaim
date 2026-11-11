@@ -1,0 +1,23 @@
+{
+  "name": "reclaim-jira-assignment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Jira Scrum provisioning and evidence workspace for the ReClaim assignment.",
+  "type": "module",
+  "scripts": {
+    "start": "node app/server.mjs",
+    "check": "node automation/check-access.mjs",
+    "validate": "node automation/provision.mjs --dry-run",
+    "provision": "node automation/provision.mjs --phase=all",
+    "bootstrap": "node automation/provision.mjs --phase=bootstrap",
+    "execute": "node automation/provision.mjs --phase=execute",
+    "complete": "node automation/provision.mjs --phase=complete",
+    "sprint2": "node automation/provision.mjs --phase=sprint2",
+    "verify": "node automation/verify.mjs",
+    "capture": "node automation/capture-evidence.mjs",
+    "pdf": "node scripts/generate-pdf.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "1.65.0"
+  }
+}
